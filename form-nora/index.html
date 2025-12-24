@@ -13,15 +13,15 @@
         <legend>Pilot Credentials</legend>
         <label for="pilot-name">Pilot Name:</label>
         <input type="text" id="pilot-name" name="pilot_name" required placeholder="Enter name" />
-        <label for="access-code">Access Code:</label>
-        <input type="password" id="password" name="password" required />
+        <label for="password">Access Code:</label>
+        <input type="password" id="password" name="access_code" required />
         <label for="email">Command Email:</label>
         <input type="email" name="email" id="email" required />
       </fieldset>
       <fieldset>
         <legend>Vessel Diagnostics:</legend>
         <label for="hull-damage">Hull Damage</label>
-        <input type="number" id="number" name="number" required />
+        <input type="number" id="number" name="hull_damage" required />
         <label for="identifier">Emergency Level:</label>
         <select name="identifier" id="identifier" required>
           <option value="low">Low</option>
@@ -32,7 +32,7 @@
       <fieldset>
         <legend>Mission Log & Evidence</legend>
         <label for="sos-message:">SOS Message:</label>
-        <textarea name="sos-message" id="sos-message" required rows="3"></textarea>
+        <textarea name="sos_message" id="sos-message" required rows="3"></textarea>
         <div class="container-wrapper">
           <input type="checkbox" name="checkbox" id="quarantine" required />
           <label for="quarantine">I agree to quarantine protocols.</label>
